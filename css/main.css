@@ -1,0 +1,152 @@
+/* FONT APIs */
+
+
+/* VARIABLES */
+:root {
+    --font-family: 'Segoe UI';
+    --fontSize-head: 18px;
+    --fontSize-para: 14px;
+    --color-yellow: #f1c40f;
+}
+
+/* UNIVERSAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    width: 100%;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* START FROM HERE */
+
+
+.game-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.game-name img {
+    width: 70px;
+}
+
+/* PLAYERS */
+
+.container {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+.container img {
+    width: 180px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px grey;
+}
+
+.container p {
+    padding: 20px 0;
+    font-size: larger;
+    font-weight: 600;
+}
+
+
+/* BUTTONS */
+.winner,
+.play-again {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+
+.winner p {
+    /* background-color: rgb(172, 33, 160); */
+    /* background-color: rgb(187, 4, 4); */
+    padding: 20px 30px;
+    width: 90%;
+    border: 3px rgb(228, 228, 228) dotted;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.play-again p {
+    background-color: greenyellow;
+    padding: 20px 30px;
+    width: 50%;
+    border-color: grey;
+    border-style: solid;
+    border-left: 40px;
+    border-top: 50px;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+
+
+.play-again p:hover {
+    background-color: rgb(153, 255, 0);
+
+}
+
+@media only screen and (max-width:500px) {
+
+    .winner p {
+        width: 90%;
+        font-size: medium;
+        padding: 15px;
+        margin: 30px 0;
+
+    }
+
+    .play-again p {
+        padding: 15px;
+        margin: 10px 0;
+
+    }
+
+    .container img {
+        width: 150px;
+    }
+
+    .winner,
+    .play-again {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+
+    .winner p {
+        width: 100%;
+        font-size: medium;
+    }
+
+}
